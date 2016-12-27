@@ -4,6 +4,7 @@ package com.feicuiedu.junitdemo;
  * Created by gqq on 2016/12/26.
  */
 
+// 计算功能的工具类
 public class Calculate {
 
     public int sum(int a,int b){
