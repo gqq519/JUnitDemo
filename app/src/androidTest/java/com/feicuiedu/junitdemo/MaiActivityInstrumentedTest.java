@@ -72,7 +72,7 @@ public class MaiActivityInstrumentedTest {
          *           longClick():长按
          *           pressBack():按下back键
          *           scrollTo()：滑动
-         * // 未讲解
+         * // 时间问题，暂未讲解
          * 3. 验证功能：check()：检测控件功能
          *      对控件的验证方法主要有以下方式：
          *      doesNotExist:在当前视图层次结构没有匹配的视图.
