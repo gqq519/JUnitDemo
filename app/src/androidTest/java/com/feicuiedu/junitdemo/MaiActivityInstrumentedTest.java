@@ -97,7 +97,7 @@ public class MaiActivityInstrumentedTest {
         Thread.sleep(3000);
 
         // 找到登录的按钮，给按钮设置一个点击事件
-        onView(withId(R.id.btnLogin)).check(ViewAssertions.doesNotExist());
+        onView(withId(R.id.btnLogin)).perform(click());
 
         Thread.sleep(10*1000);
 
