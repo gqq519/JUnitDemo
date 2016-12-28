@@ -22,7 +22,7 @@ public class CalculateTest {
     /**
      * 1. @Before：在执行测试代码之前会被执行：一般会去做一些类的初始化的工作等
      * 2. @After：在执行测试方法之后会被执行：一般进行资源的释放：对象置为空
-     * 3. @Test: 表明他是一个要被测试的方法
+     * 3. @Test: 表明他是一个要被测试的方法：测试用例
      * 4. @BeforeClass：只会被执行一次：用static修饰
      * 5. @AfterClass：只会被执行一次：用static修饰
      * 6. @Ignore:忽略
