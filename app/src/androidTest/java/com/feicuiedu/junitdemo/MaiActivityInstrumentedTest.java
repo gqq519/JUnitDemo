@@ -3,6 +3,7 @@ package com.feicuiedu.junitdemo;
 import android.app.Activity;
 import android.support.test.espresso.ViewAction;
 import android.support.test.espresso.action.ViewActions;
+import android.support.test.espresso.assertion.ViewAssertions;
 import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
 import android.support.v7.app.AppCompatActivity;
@@ -71,6 +72,16 @@ public class MaiActivityInstrumentedTest {
          *           longClick():长按
          *           pressBack():按下back键
          *           scrollTo()：滑动
+         * // 未讲解
+         * 3. 验证功能：check()：检测控件功能
+         *      对控件的验证方法主要有以下方式：
+         *      doesNotExist:在当前视图层次结构没有匹配的视图.
+         *      matches: Hamcrest匹配器匹配视图的操作(比如匹配文本等).
+         *
+         *      比如：匹配视图上的文本验证：详见：TextTestActivity的测试类
+         *      比如：检测该控件是否显示
+         *      onView(withId(R.id.btnLoad)).check(ViewAssertions.matches(ViewMatchers.isDisplayed()));
+         *
          */
 
         Thread.sleep(3000);// 主要是为了效果的展示慢一点
@@ -86,8 +97,9 @@ public class MaiActivityInstrumentedTest {
         Thread.sleep(3000);
 
         // 找到登录的按钮，给按钮设置一个点击事件
-        onView(withId(R.id.btnLogin)).perform(click());
+        onView(withId(R.id.btnLogin)).check(ViewAssertions.doesNotExist());
 
         Thread.sleep(10*1000);
+
     }
 }
