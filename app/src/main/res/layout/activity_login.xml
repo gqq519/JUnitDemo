@@ -28,14 +28,6 @@
             android:inputType="textPassword"/>
     </android.support.design.widget.TextInputLayout>
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <ProgressBar
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_gravity="center"/>
 
         <Button
             android:id="@+id/btnLogin"
@@ -44,8 +36,6 @@
             android:layout_height="wrap_content"
             android:text="登录"
             />
-
-    </FrameLayout>
 
 
 </LinearLayout>
